@@ -86,12 +86,32 @@
 
 
 
-function filter(params) {
+// function filter(params) {
     
+// }
+
+// var even = function(i) { return i % 2 === 0 };
+// filter([1, 2, 3, 4], even) // => [2, 4]
+
+// var none = function(i) { return false; };
+// filter([1, 2, 3, 4], none) // => []
+
+//ejercicio
+
+function filter(num , fun){
+    aux=[];
+    for (i = 0; i < num.length; i++) {
+        
+    }
 }
+
+
+
+
 
 var even = function(i) { return i % 2 === 0 };
 filter([1, 2, 3, 4], even) // => [2, 4]
 
 var none = function(i) { return false; };
 filter([1, 2, 3, 4], none) // => []
+
