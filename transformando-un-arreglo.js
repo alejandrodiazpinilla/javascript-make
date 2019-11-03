@@ -1,11 +1,16 @@
- function transform(num, fun){
-     aux=[]
-    for(i=0;i<num.length;i++){
-        aux[i] = fun(num[i])
-       // console.log( fun(num[i]))
-    }
-    console.log(aux)
- }
+//  function transform(num, fun){
+//      aux=[]
+//     for(i=0;i<num.length;i++){
+//         aux[i] = fun(num[i])
+//        // console.log( fun(num[i]))
+//     }
+//     console.log(aux)
+//  }
+
+
+  function transform(arr, func) {
+    console.log( arr.map(func))
+  }
 
 var duplicate = function(i) { return i * 2; };
 transform([1, 2, 3], duplicate) // => [2, 4, 6]

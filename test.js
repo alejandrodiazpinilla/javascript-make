@@ -98,20 +98,50 @@
 
 //ejercicio
 
-function filter(num , fun){
-    aux=[];
-    for (i = 0; i < num.length; i++) {
-        
+// function filter(num , fun){
+//     num.filter(fun)
+//    console.log( num.filter(fun))
+//    }
+
+
+
+
+
+// var even = function(i) { return i % 2 === 0  };
+// filter([1, 2, 3, 4], even) // => [2, 4]
+
+// var none = function(i) { return false; };
+// filter([1, 2, 3, 4], none) // => [
+
+ //   Componiendo funciones
+
+//  function compose(fun1 , fun2 ){
+//      console.log(fun2(fun1()))
+//  }
+
+
+// var greet = function() {return "Bienvenidos"; };
+// var yell = function(str) { return str.toUpperCase() + "!"; };
+// compose(greet, yell); // => BIENVENIDOS!
+
+// var generate = function() { return 2; };
+// var square = function(x) { return x * x; }
+// compose(generate, square); // => 4
+
+//ordenar el desorden 
+function order(num, reverse){
+    if (reverse == true) {
+     num.reverse()
+     num.sort(function(a,b){return a - b;})
+        console .log (num)
+    } else {
+        num.sort()   
+        console.log( num)
     }
 }
 
 
 
-
-
-var even = function(i) { return i % 2 === 0 };
-filter([1, 2, 3, 4], even) // => [2, 4]
-
-var none = function(i) { return false; };
-filter([1, 2, 3, 4], none) // => []
-
+order([1, 2, 3], true) //=> [3, 2, 1]
+order([5, 2, 1, 3, 4]) //=> [1, 2, 3, 4, 5]
+order([25, 10, 1, 1, 5, 14], true)
