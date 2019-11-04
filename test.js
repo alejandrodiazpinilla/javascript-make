@@ -129,19 +129,57 @@
 // compose(generate, square); // => 4
 
 //ordenar el desorden 
-function order(num, reverse){
-    if (reverse == true) {
-     num.reverse()
-     num.sort(function(a,b){return a - b;})
-        console .log (num)
-    } else {
-        num.sort()   
-        console.log( num)
-    }
+// function order(num, reverse){
+//     if (reverse == true) {
+//      num.reverse()
+//      num.sort(function(a,b){return a - b;})
+//         console .log (num)
+//     } else {
+//         num.sort()   
+//         console.log( num)
+//     }
+// }
+// order([1, 2, 3], true) //=> [3, 2, 1]
+// order([5, 2, 1, 3, 4]) //=> [1, 2, 3, 4, 5]
+// order([25, 10, 1, 1, 5, 14], true)
+
+//planando arrgelos 
+//  function flatten(num){
+//     // flatten.flar()
+// //console.log(num.flat())
+// console.log(num.flatMap(x => [x ]))
+//  }
+
+// flatten([[1], [2]]) // => [1, 2]
+// flatten([[1, 2, 3], [4, 5], [6]]); // => [1, 2, 3, 4, 5, 6]
+
+// retornando una funcion 
+
+// function counter(){
+
+//     console.log(counter +=1) ;
+// }
+
+// var count = counter();
+// count(); // => 1
+// count(); // => 2
+// count(); // => 3
+
+// var clicky = counter();
+// clicky(); // => 1
+// clicky(); // => 2
+
+
+var counter = 0;
+
+// Function to increment counter
+function add() {
+ console.log( counter += 1);
 }
+// Call add() 3 times
+add();
+add();
+add();
+clicky()
 
 
-
-order([1, 2, 3], true) //=> [3, 2, 1]
-order([5, 2, 1, 3, 4]) //=> [1, 2, 3, 4, 5]
-order([25, 10, 1, 1, 5, 14], true)
