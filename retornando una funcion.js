@@ -1,8 +1,19 @@
-function counter(){
-    counter += 1
-console.log (counter)
-}
-console.log(count)
+function counter() {
+    for (var count = 1; ; count++) {  // infinite loop
+        if (count === 5) {          
+          return;
+        }
+        console.log(count );  // until 4
+      }
+  }
+  
+    
+  function counter(){
+      count= 0
+      for (count = 0; count < 3 ; count++) {
+      console.log(count += 1)
+      }
+    }
 var count = counter();
 count(); // => 1
 count(); // => 2
