@@ -183,28 +183,33 @@
 // clicky()
 
 
-objetos literales 
+// objetos literales 
 
-var pepito ={
-    nombre: "Pepito",
-    }
-    var hijas={
-      nombre:"German"
-    }
-    var menor ={
-    german: hijas
-    }
-    var maria = {
-      nombre: "Terah",
-      edad: 32,
-      altura: 1.70,
-      peso: 60,
-      colorPelo: "cafe",
-      esposo: pepito,
-      hijos: menor,
-        bmi: function() { 
-       alert! (maria.peso/maria.altura^2)
-        }
-      }
+// var pepito ={
+//     nombre: "Pepito",
+//     }
+//     var hijas={
+//       nombre:"German"
+//     }
+//     var menor ={
+//     german: hijas
+//     }
+//     var maria = {
+//       nombre: "Terah",
+//       edad: 32,
+//       altura: 1.70,
+//       peso: 60,
+//       colorPelo: "cafe",
+//       esposo: pepito,
+//       hijos: menor,
+//         bmi: function() { 
+//             console.log(maria.peso/Math.pow(maria.altura, 2))
+//         }
+//       }
+//       console.log(maria.peso/Math.pow(maria.altura, 2))
     
-    
+
+// var user = new User("Juan", "juan@makeitreal.camp");
+
+// user.name => "Juan";
+// user.email => "juan@makeitreal.camp";
