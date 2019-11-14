@@ -170,16 +170,41 @@
 // clicky(); // => 2
 
 
-var counter = 0;
+// var counter = 0;
 
-// Function to increment counter
-function add() {
- console.log( counter += 1);
-}
-// Call add() 3 times
-add();
-add();
-add();
-clicky()
+// // Function to increment counter
+// function add() {
+//  console.log( counter += 1);
+// }
+// // Call add() 3 times
+// add();
+// add();
+// add();
+// clicky()
 
 
+objetos literales 
+
+var pepito ={
+    nombre: "Pepito",
+    }
+    var hijas={
+      nombre:"German"
+    }
+    var menor ={
+    german: hijas
+    }
+    var maria = {
+      nombre: "Terah",
+      edad: 32,
+      altura: 1.70,
+      peso: 60,
+      colorPelo: "cafe",
+      esposo: pepito,
+      hijos: menor,
+        bmi: function() { 
+       alert! (maria.peso/maria.altura^2)
+        }
+      }
+    
+    
