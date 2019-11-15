@@ -9,10 +9,11 @@ function Car() {
     this.velocity -= amount || 1;
     return this;
   }
-  Car.prototype.Bus=
+  
    function Bus(){
+       
     }
-    Car.prototype.Bus
+    
 
   
 
