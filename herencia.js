@@ -1,19 +1,24 @@
 function Car() {
-    this.velocity = 0; 
-  }
-  Car.prototype.accelerate = function(amount) {
-    this.velocity += amount || 1;
-    return this;
-  }
-  Car.prototype.break = function(amount) {
-    this.velocity -= amount || 1;
-    return this;
-  }
-  
-   function Bus(){
-       
-    }
-    
+  this.velocity = 0; 
+}
+Car.prototype.accelerate = function(amount) {
+  this.velocity += amount || 1;
+  return this;
+}
+Car.prototype.break = function(amount) {
+  this.velocity -= amount || 1;
+  return this;
+}
+
+Bus.prototype = Object.create(Car.prototype)
+
+function Bus(){
+  this.velocity = 0;
+}
+Bus.prototype.beep = function() {
+  this.beep = "BEEP!";
+  return this;
+}
 
   
 
