@@ -38,3 +38,12 @@ bus.break(2);
 bus.velocity; // => 0
 
 bus.beep(); // => "BEEP!"
+
+// solucion make 
+// function Bus() {
+//   Car.call(this);
+// }
+// Bus.prototype = new Car();
+// Bus.prototype.beep = function() {
+//  return "BEEP!" 
+// };
