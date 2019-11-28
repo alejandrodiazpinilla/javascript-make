@@ -1,14 +1,21 @@
 function plates(text){
-
-  ha =  text.split(/\w{3}\d{3}/g)
-    //expresion =  /[A-3Z]{3}(\d{3})/
-    console.log(ha)
+  expresion = /[A-Z]{3}\d{3}/g
+  if (text.match(expresion)== null) {
+     console.log ([""])
+  } else{
+   console.log( text.match(expresion)    )
+  }
 }
 
+plates("AAA123"); 
+plates("Iba en un AAA123 y después en un BBB987"); 
+plates("no coincide");
 
 
 
+// solucion make 
 
-plates("AAA123"); // => ["AAA123"]
-plates("Iba en un AAA123 y después en un BBB987"); //=> ["AAA123", "BBB987"]
-plates("no coincide"); // => []
+// function plates(str) {
+//   var matches = str.match(/[A-Z]{3}\d{3}/g);
+//   return matches ? matches : [];
+// }
